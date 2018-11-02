@@ -1,0 +1,136 @@
+/*
+  NAVIGATION
+*/
+
+/* Give the navbar some transparency
+   See also https://www.w3schools.com/css/css3_colors.asp */
+.navbar-inverse {
+  background-color: rgba(32, 35, 41, 0.8);
+}
+
+/*
+  SEARCH FORM
+*/
+
+/* Media query to control certain navbar aspects on mobile */
+@media screen and (max-width: 768px) {
+  /* Put the search field and button on one line.
+     This rule targets the input field with name attribute = 'search-text'. */
+  .navbar-form input[name="search-text"] {
+      width: 75%;
+      display: inline-block;
+  }
+  .navbar-form .btn {
+      vertical-align: top;
+  }
+
+  /* Make the navbar slightly darker when expanded so the menu items
+     are readable over the background image */
+  .navbar-inverse .navbar-collapse {
+    background-color: rgba(35, 38, 43, 0.8);
+  }
+
+  /* Make highlighting on the navigation toggle slightly more obvious */
+  .navbar-inverse .navbar-toggle {
+    border-color: white;
+  }
+  .navbar-inverse .navbar-toggle:focus,
+    .navbar-inverse .navbar-toggle:hover {
+    border-color: #add8e6;
+  }
+}
+
+/*
+  JUMBOTRON CONTENT
+*/
+
+.jumbotron {
+  padding: 90px 30px 30px 30px;
+  background-image: url('../images/fruit-and-veg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 600px;
+  font-size: 1.5em;
+}
+
+.jumbotron h1 {
+  font-family: 'Vast Shadow', cursive;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.jumbotron img {
+  margin-top: 50px;
+}
+
+.jumbotron .form-group {
+    line-height: 1em;
+}
+
+.jumbotron label {
+  color: white;
+}
+
+/*
+  CONTACT FORM
+*/
+
+.form-inline input[name='email'] {
+    width: 80%;
+}
+
+/* Media query to give the Send button in the hero area some spacing on mobile */
+@media screen and (max-width: 768px) {
+  .form-inline .btn {
+      margin-top: 10px;
+  }
+}
+
+/*
+  TESTIMONIALS
+*/
+
+blockquote {
+  border-left: 0;
+}
+
+/*
+  MISSION
+*/
+
+#mission {
+  background-color: rgba(32, 35, 41, 0.9);
+  color: #ddd;
+  padding-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 1.5em;
+}
+
+/*
+  SOCIAL MEDIA SHARING
+*/
+
+#social-buttons .btn {
+  color: white;
+}
+
+.btn-twitter {
+  background: #00acee;
+  border-color: #009ad5;
+}
+
+.btn-facebook {
+  background: #4868ac;
+  border-color: #314776;
+}
+
+.btn-pinterest {
+  background: #b62f26;
+  border-color: #b62f26;
+}
+
+#social-buttons {
+  margin-top: 50px;
+}
