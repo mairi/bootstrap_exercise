@@ -8,6 +8,15 @@
   background-color: rgba(32, 35, 41, 0.8);
 }
 
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-form {
+  border: 0 none;
+  box-shadow: none;
+}
+
 /*
   SEARCH FORM
 */
@@ -57,10 +66,6 @@
   font-family: 'Vast Shadow', cursive;
   color: white;
   margin-bottom: 1em;
-}
-
-.jumbotron img {
-  margin-top: 50px;
 }
 
 .jumbotron .form-group {
